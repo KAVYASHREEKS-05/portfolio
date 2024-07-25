@@ -12,8 +12,8 @@ hamburger.addEventListener('click',()=>{
 })
 downloadResume.addEventListener('click',()=>{
     const a=document.createElement('a')
-    a.href="Resume-tcs.pdf";
-    a.document="Resume-tcs.pdf";
+    a.href="my-resume.pdf";
+    a.document="my-resume.pdf";
     a.target = '_blank';
     document.body.appendChild(a)
     a.click();
