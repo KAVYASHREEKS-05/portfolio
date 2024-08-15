@@ -13,10 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="script.js" defer></script>
+
 </head>
 
 <body>
-    <div class="container">
+    <div class="container ">
         <header class="header">
             <h1>Portfolio</h1>
             <nav class="nav">
@@ -46,7 +47,8 @@
                 <div class="social-media">
                     <span><a href="https://www.instagram.com/kavyaks_acharya?igsh=MTI3cWtqM3ZtMXUzbA=="
                             target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
-                    <span><a href="https://www.linkedin.com/in/kavyashree-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/kavyashree-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></span>
                     <span><a href="https://github.com/KAVYASHREEKS-05" target="_blank"><i
                                 class="fa-brands fa-github"></a></i></span>
                 </div>
@@ -61,8 +63,10 @@
         <div class="about" id="about">
             <h1 class="heading reveal">About <b> Me</b></h1>
             <div class="about-details reveal ">
-                <p>I’m a recent engineering graduate with a strong foundation in HTML, CSS, and JavaScript. I’ve
-                    completed specialized courses in HTML CSS, JavaScript through Coursera, a program offered by Meta,
+                <p>I’m a recent engineering graduate with a strong foundation in HTML, CSS, and JavaScript and also have
+                    a Clear Knowledge about React and UI and UX. I’ve
+                    completed specialized courses in HTML CSS, JavaScript,React ,Bootstrap,UI And UX,Version Control
+                    through Coursera, a program offered by Meta,
                     and gained practical experience during my internship at Inflow Technology. I’m passionate about
                     front-end development and eager to apply my skills in a dynamic environment.</p>
                 <p class="extra-inf hidden">After completing these courses, I have worked on numerous projects that have
@@ -88,7 +92,19 @@
                 <div class="skill">
                     <div class="skill-name">Javascript</div>
                     <div class="skill-bar">
-                        <div class="skill-per" per="60%" style="max-width:60%"></div>
+                        <div class="skill-per" per="65%" style="max-width:65%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">React</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50%" style="max-width:50%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">UI And UX</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
                     </div>
                 </div>
             </div>
@@ -313,6 +329,28 @@
                     </div>
                 </div>
             </div>
+            <div class="project-container">
+                <h1 class="reveal">Simple React Project</h1>
+                <div class="projects game-project">
+                    <div class="image-container reveal">
+                        <img src="images/project/react/react-1.jpg" alt="">
+                        <div class="image-details">
+                            <h3>Recipe Finder</h3>
+                            <a href="https://receipe-finder-website.netlify.app/" target="_blank"><i
+                                    class="fa-regular fa-folder-open"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-container reveal">
+                        <img src="images/project/react/react-2.jpg" alt="">
+                        <div class="image-details">
+                            <h3>little Lemon Restaurant</h3>
+                            <a href="https://little-lemon-restaurant-using-react.netlify.app/" target="_blank"><i
+                                    class="fa-regular fa-folder-open"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
         </div>
         <div class="my-certificate" id="certificate">
             <h1 class="certificate-heading reveal">My <b>Certificates</b></h1>
@@ -327,42 +365,47 @@
                 <div class="certificate-container reveal">
                     <img src="images/certificate-images/certificate-2.jpg" alt="">
                     <div class="certificate-details">
-                        <h3>HTML and CSS Certificate By Meta</h3>
-                        <i class="fa-regular fa-folder-open html-css"></i>
+                        <h3>Front-End Certificate By Meta</h3>
+                        <i class="fa-regular fa-folder-open meta"></i>
                     </div>
                 </div>
-                <div class="certificate-container reveal">
-                    <img src="images/certificate-images/certificate-2.jpg" alt="">
-                    <div class="certificate-details">
-                        <h3>JavaScript By Meta</h3>
-                        <i class="fa-regular fa-folder-open javascript"></i>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="contact-me" id="contact">
             <h1 class="reveal">Contact <b>Me!</b></h1>
             <div class="form-container">
-                <form action="" class="reveal">
-                    <div class="contact-details ">
-                        <input type="text" class="name input" placeholder="full Name">
-                        <input type="email" class="email input" placeholder="Email Address">
+                <form class="reveal" id="form" method="POST">
+                    <input type="hidden" name="access_key" value="3c532919-8bd2-482d-a2e9-cef980387c32">
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+                    <div class="contact-details">
+            
+                        <input type="text" name="fullName" class="name input" placeholder="Full Name" required>
+                        <input type="email" name="emailAddress" class="email input" placeholder="Email Address" required>
                         <br>
-                        <input type="tel" class="mobile input" placeholder="Mobile Number">
-                        <input type="text" class="email-subject input" placeholder="Email-Subject">
+                        <input type="tel" name="mobileNumber" class="mobile input" placeholder="Mobile Number">
+                        <input type="text" name="emailSubject" class="email-subject input" placeholder="Email-Subject" required>
                         <br>
-                        <textarea class="your-message input" placeholder="Your Message" required></textarea>
+                        <textarea name="message" class="your-message input" placeholder="Your Message" required></textarea>
                     </div>
-                    <button class="send-message ">Send Message</button>
+            
+                    <button class="send-message">Send Message</button>
+                    <div id="result"></div>
+            
                 </form>
             </div>
+            
+
         </div>
         <footer>
             <div class="footer">
                 <div class="social-media-icons">
                     <strong><a href="https://www.instagram.com/kavyaks_acharya?igsh=MTI3cWtqM3ZtMXUzbA=="
                             target="_blank"><i class="fa-brands fa-instagram"></i></a></strong>
-                    <strong><a href="https://www.linkedin.com/in/kavyashree-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></strong>
+                    <strong><a
+                            href="https://www.linkedin.com/in/kavyashree-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></strong>
                     <strong><a href="https://github.com/KAVYASHREEKS-05" target="_blank"><i
                                 class="fa-brands fa-github"></a></i></strong>
                 </div>
