@@ -5,6 +5,7 @@ const readMoreButton=document.querySelector(".read-more")
 const extraInf=document.querySelector(".extra-inf")
 const InternCertificate=document.querySelector('.intern')
 const MetaCertificate=document.querySelector('.meta')
+const UdemyCertificate=document.querySelector('.udemy')
 
 hamburger.addEventListener('click',()=>{
     nav.classList.toggle('open')
@@ -12,8 +13,8 @@ hamburger.addEventListener('click',()=>{
 })
 downloadResume.addEventListener('click',()=>{
     const a=document.createElement('a')
-    a.href="My-resume.pdf";
-    a.document="My-resume.pdf";
+    a.href="KavyashreeKS-Resume.pdf";
+    a.document="KavyashreeKS-Resume.pdf";
     a.target = '_blank';
     document.body.appendChild(a)
     a.click();
@@ -41,6 +42,15 @@ readMoreButton.onclick = () => {
     const a=document.createElement('a')
     a.href="certificates/meta-certificate.pdf";
     a.document="certificates/meta-certificate.pdf";
+    a.target = '_blank';
+    document.body.appendChild(a)
+    a.click();
+    document.body.removeChild(a);
+})
+  UdemyCertificate.addEventListener('click',()=>{
+    const a=document.createElement('a')
+    a.href="certificates/udemy.jpg";
+    a.document="certificates/udemy.jpg";
     a.target = '_blank';
     document.body.appendChild(a)
     a.click();
