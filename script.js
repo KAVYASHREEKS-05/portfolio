@@ -6,6 +6,7 @@ const extraInf=document.querySelector(".extra-inf")
 const InternCertificate=document.querySelector('.intern')
 const MetaCertificate=document.querySelector('.meta')
 const UdemyCertificate=document.querySelector('.udemy')
+const IBMCertificate=document.querySelector('.ibm')
 
 hamburger.addEventListener('click',()=>{
     nav.classList.toggle('open')
@@ -13,8 +14,8 @@ hamburger.addEventListener('click',()=>{
 })
 downloadResume.addEventListener('click',()=>{
     const a=document.createElement('a')
-    a.href="KavyashreeKS-Resume.pdf";
-    a.document="KavyashreeKS-Resume.pdf";
+    a.href="resume.pdf";
+    a.document="resume.pdf";
     a.target = '_blank';
     document.body.appendChild(a)
     a.click();
@@ -51,6 +52,15 @@ readMoreButton.onclick = () => {
     const a=document.createElement('a')
     a.href="certificates/udemy.jpg";
     a.document="certificates/udemy.jpg";
+    a.target = '_blank';
+    document.body.appendChild(a)
+    a.click();
+    document.body.removeChild(a);
+})
+  IBMCertificate.addEventListener('click',()=>{
+    const a=document.createElement('a')
+    a.href="certificates/IBM.pdf";
+    a.document="certificates/IBM.pdf";
     a.target = '_blank';
     document.body.appendChild(a)
     a.click();
